@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router()
 const  { getAllThoughts, getThoughtsById, addThoughts, updateThought,  deleteThought
 } =require('../../control/control-thoughts');
 router
@@ -11,4 +11,4 @@ router
 .put(updateThought)
 .delete(deleteThought)
 
-module.exports = router 
+module.exports = router;

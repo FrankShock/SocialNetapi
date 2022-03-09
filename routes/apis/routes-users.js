@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router()
 const {getAllUsers,createUsers,updateUsers,deleteUsers,deleteFriend
 } = require('../../control/control-user');
 router
