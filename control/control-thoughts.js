@@ -14,7 +14,7 @@ const controlThoughts  = {
     },
 
 
-getThoughtsById({ params}, res) =>  {
+getThoughtsById({ params}, res)  {
     Thoughts.findOne({ _id: params.id })
     .populate({
         path: 'thoughts',
@@ -27,7 +27,7 @@ getThoughtsById({ params}, res) =>  {
         console.log(err);
         res.status(400);
     });
-}
+},
 
 addThoughts({ params, body }, res) {
     console.log(body);
@@ -48,7 +48,7 @@ addThoughts({ params, body }, res) {
         res.json(dbThoughtsData);
     })
     .catch(err => res.json(err));
-}
+},
 updateThought(req, res) {
     Thoughts.findOneAndUpdate({ _id: req.params.id },
          {$set:req.body},
@@ -62,7 +62,7 @@ if (!dbThoughtsData) {
             res.json(dbThoughtsData);
           })
           .catch(err => res.json(err));
-      };
+      },
 addReaction(req, res) {
     Thoughts.findOneAndUpdate(
         { _id: req.params.thoughtId },
@@ -73,7 +73,7 @@ addReaction(req, res) {
         .catch(err => {
         res.status(400);
         });
-}
+},
 
 
 
@@ -81,7 +81,7 @@ addReaction(req, res) {
         Thoughts.findOneAndDelete({ _id: params.id })
           .then(dbThoughtsData => res.json(dbThoughtsData))
           .catch(err => res.json(err));
-      };
+      }
 
 };
 

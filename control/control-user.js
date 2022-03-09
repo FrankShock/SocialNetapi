@@ -1,4 +1,6 @@
+
 const {Users} = require('../models');
+const res = require('express/lib/response');
 const userControl = {
 
 createUsers({body}, res) {

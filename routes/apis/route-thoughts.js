@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const  { getAllThoughts, getThoughtsById, addThoughts, updateThought,  addReaction, deleteThought
+const  { getAllThoughts, getThoughtsById, addThoughts, updateThought,  deleteThought
 } =require('../../control/control-thoughts');
 router
 .route('/')
