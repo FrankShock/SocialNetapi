@@ -1,0 +1,28 @@
+{
+  "name": "socialnetapi",
+  "version": "1.0.0",
+  "description": "This is Note taker application. Which allows to to  create custom notes and delete them.  \r ## Images\r ![Screenshot1](https://github.com/FrankShock/NOTETAKER/blob/c334b74581dc23bbd1d413a01390977bc8e11ffd/Develop/public/assets/Images/Notescreenshot1.JPG)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankShock/SocialNetapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankShock/SocialNetapi/issues"
+  },
+  "homepage": "https://github.com/FrankShock/SocialNetapi#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "inquirer": "^8.2.0",
+    "jest": "^27.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.4"
+  }
+}
